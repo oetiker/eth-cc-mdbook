@@ -9,6 +9,7 @@ build-dir = "book"
 
 [output.html]
 git-repository-url = "https://github.com/oetiker/eth-cc-mdbook"
+edit-url-template = "https://github.com/oetiker/eth-cc-mdbook/edit/main/{path}"
 additional-css = ["./theme/custom.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
