@@ -1,0 +1,32 @@
+/* Custom CSS overrides for the mdBook default theme.
+ *
+ * This file is loaded via additional-css in book.toml.
+ * It lets you tweak the look without replacing the entire theme.
+ */
+
+/* Slightly wider content area */
+:root {
+    --content-max-width: 850px;
+}
+
+/* Softer sidebar background in light themes */
+.sidebar {
+    font-size: 0.9em;
+}
+
+/* Give headings a subtle accent underline */
+.content main h1 {
+    border-bottom: 2px solid var(--sidebar-active);
+    padding-bottom: 0.3em;
+}
+
+/* Slightly rounded code blocks */
+.content main pre {
+    border-radius: 6px;
+}
+
+/* Make inline code stand out a bit more */
+.content main code {
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+}

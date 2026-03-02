@@ -1,0 +1,16 @@
+[book]
+authors = ["Your Name"]
+language = "en"
+src = "src"
+title = "mdBook Getting Started Guide"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/oetiker/eth-cc-mdbook"
+additional-css = ["./theme/custom.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
